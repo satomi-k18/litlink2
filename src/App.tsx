@@ -16,7 +16,7 @@ export default function App() {
       <p className="mt-3 text-lg opacity-80">
         心と体の美しさを、毎日の小さな習慣から
       </p>
-      <p className="mt-1 text-lg opacity-80">
+      <p className="mt-1 text-base md:text-lg leading-snug opacity-80 text-center whitespace-pre-line">
         7年の指導歴×AIツールでヨガインストラクターの裏方をお手伝い。
       </p>
       <p className="mt-1 mb-8 font-medium">—Let’s create the life you love— 👇</p>
