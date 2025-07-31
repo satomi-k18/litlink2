@@ -3,7 +3,7 @@ export const links = [
     id: 'yoga',
     label: '🧘‍♀️ YOGA',
     desc: '【体験募集中】新琴似ヨガクラス',
-    href: 'https://beautywellness365.com/shinkotoniyoga/',
+    href: 'https://satomi-k18.github.io/shinkotini/',
     bg: 'bg-card1',
   },
   {
