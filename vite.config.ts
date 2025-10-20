@@ -25,7 +25,8 @@ export default defineConfig(({ command }) => {
   }
 
   return {
-    base: isBuild ? './' : '/',
+    base: './',
+    ...(isBuild ? {} : { base: '/' }),
     plugins,
   };
 });
