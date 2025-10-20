@@ -2,12 +2,130 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>litlink</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", "Nunito", sans-serif;
+        background: #f0fdf4;
+        color: #374151;
+      }
+      main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1rem 5rem;
+        text-align: center;
+      }
+      img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-top: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #1f2937;
+      }
+      p.lead {
+        margin-top: 0.75rem;
+        font-size: 1.125rem;
+        opacity: 0.8;
+      }
+      p.sub {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        opacity: 0.8;
+      }
+      p.catch {
+        margin: 0.5rem 0 2rem;
+        font-weight: 600;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 28rem;
+      }
+      .card {
+        display: block;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        transition: transform 0.15s ease, opacity 0.15s ease;
+        text-decoration: none;
+        color: inherit;
+      }
+      .card:hover {
+        transform: scale(1.03);
+        opacity: 0.95;
+      }
+      .card h2 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      .card p {
+        margin-top: 0.75rem;
+      }
+      .bg-card1 { background: #fff7e0; }
+      .bg-pink { background: #fce7f3; }
+      .bg-violet { background: #ede9fe; }
+      .bg-sky { background: #e0f2fe; }
+      .bg-rose { background: #ffe4e6; }
+
+      @media (min-width: 768px) {
+        h1 { font-size: 2rem; }
+        .card h2 { font-size: 1.35rem; }
+        p.sub { font-size: 1rem; }
+      }
+    </style>
   </head>
-  <body class="font-body">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <main>
+      <img src="./avatar.jpg" alt="Satomi Konishi Avatar" />
+      <h1>札幌ヨガ講師｜Satomi Konishi</h1>
+      <p class="lead">心と体の美しさを、毎日の小さな習慣から</p>
+      <p class="sub">
+        7年の指導歴×AIツールで<br />
+        ヨガインストラクターの裏方をお手伝い。
+      </p>
+      <p class="catch">—Let’s create the life you love— 👇</p>
+
+      <section>
+        <a class="card bg-card1" href="https://satomi-k18.github.io/shinkotini/" target="_blank" rel="noopener noreferrer">
+          <h2>🧘‍♀️ YOGA</h2>
+          <p>【体験募集中】新琴似ヨガクラス</p>
+        </a>
+        <a class="card bg-pink" href="https://note.com/yoga_satomi" target="_blank" rel="noopener noreferrer">
+          <h2>📔 BLOG</h2>
+          <p>AI✖️ヨガビジネスブログ</p>
+        </a>
+        <a class="card bg-violet" href="https://konishisatomi.lifevantage.com/" target="_blank" rel="noopener noreferrer">
+          <h2>💊 SUPPLEMENT</h2>
+          <p>ライフバンテージでエネルギーチャージ</p>
+        </a>
+        <a class="card bg-sky" href="https://www.livegood-wellness.com/" target="_blank" rel="noopener noreferrer">
+          <h2>🌱 LiveGoodでアフィリエイト</h2>
+          <p>最新サプリで収入も健康もアップ</p>
+        </a>
+        <a class="card bg-rose" href="https://room.rakuten.co.jp/room_98ab71876b/items" target="_blank" rel="noopener noreferrer">
+          <h2>🛍 楽天ROOM</h2>
+          <p>ヨガ講師の愛用グッズ</p>
+        </a>
+      </section>
+    </main>
   </body>
 </html>
+      .card.small h2 { font-size: 1.05rem; }
