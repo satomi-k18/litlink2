@@ -23,5 +23,8 @@ export default defineConfig(({ command }) => {
   return {
     base: './',
     plugins: [react(), devSubPathPlugin],
+    build: {
+      outDir: 'docs', // ← 出力先を直接 docs に変更！
+    },
   }
 })
