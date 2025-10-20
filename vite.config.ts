@@ -1,9 +1,9 @@
-import { defineConfig, type PluginOption } from 'vite';
-import react from '@vitejs/plugin-react';
-// PWA support can be re-enabled once service worker build is stable.
+import { defineConfig, type PluginOption } from 'vite'
+import react from '@vitejs/plugin-react'
+// PWA support can be re-enabled once service worker build is fixed
 
 export default defineConfig(({ command }) => {
-  const isBuild = command === 'build';
+  const isBuild = command === 'build'
 
   const devSubPathPlugin: PluginOption = {
     name: 'litlink2-dev-subpath',
@@ -11,22 +11,17 @@ export default defineConfig(({ command }) => {
     configureServer(server) {
       server.middlewares.use((req, _res, next) => {
         if (req.url && req.url.startsWith('/litlink2')) {
-          const nextPath = req.url.replace(/^\/litlink2/, '') || '/';
-          req.url = nextPath;
+          const nextPath = req.url.replace(/^\/litlink2\//, '/')
+          req.url = nextPath
         }
-        next();
-      });
+        next()
+      })
     },
-  };
-
-  const plugins = [react()];
-  if (!isBuild) {
-    plugins.push(devSubPathPlugin);
   }
 
+  // ←ここからが重要：return の中に base と plugins を入れる！
   return {
     base: './',
-    ...(isBuild ? {} : { base: '/' }),
-    plugins,
-  };
-});
+    plugins: [react(), devSubPathPlugin],
+  }
+})
