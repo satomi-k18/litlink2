@@ -2,13 +2,210 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/litlink2/favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/favicon-BO1v3ZD5.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>litlink</title>
-    <script type="module" crossorigin src="/litlink2/assets/index-D_6p17RB.js"></script>
-    <link rel="stylesheet" crossorigin href="/litlink2/assets/index-Byr8Frt2.css">
-  <link rel="manifest" href="/litlink2/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/litlink2/registerSW.js"></script></head>
-  <body class="font-body">
-    <div id="root"></div>
+    <title>小西聡美 | wellness.labo</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", "Nunito", sans-serif;
+        background: linear-gradient(160deg, #fff5f7 0%, #f0fdf4 60%, #fafafa 100%);
+        color: #374151;
+        min-height: 100vh;
+      }
+      main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem 5rem;
+        text-align: center;
+      }
+
+      /* Avatar */
+      .avatar {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        box-shadow: 0 10px 25px -5px rgba(244, 114, 182, 0.25),
+          0 4px 10px -3px rgba(0, 0, 0, 0.08);
+        -o-object-fit: cover;
+           object-fit: cover;
+      }
+
+      /* Profile text */
+      h1 {
+        margin: 1.25rem 0 0.25rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1f2937;
+        letter-spacing: 0.01em;
+      }
+      .tagline {
+        margin: 0.25rem 0 0;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #f472b6;
+        letter-spacing: 0.05em;
+      }
+      .role {
+        margin: 0.6rem 0 0;
+        font-size: 0.85rem;
+        color: #6b7280;
+      }
+      .divider {
+        width: 2.5rem;
+        height: 2px;
+        background: linear-gradient(to right, #f9a8d4, #86efac);
+        border-radius: 9999px;
+        margin: 1rem auto;
+      }
+      .bio {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #4b5563;
+      }
+      .sub {
+        margin: 0.4rem 0 0;
+        font-size: 0.8rem;
+        color: #9ca3af;
+      }
+      .catch {
+        margin: 0.75rem 0 2rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #6b7280;
+      }
+
+      /* Link cards */
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+        width: 100%;
+        max-width: 26rem;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+        border-radius: 1.25rem;
+        border: 1px solid transparent;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        text-decoration: none;
+        color: inherit;
+        text-align: left;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      .card-emoji {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+        line-height: 1;
+      }
+      .card-body {
+        flex: 1;
+        min-width: 0;
+      }
+      .card-body h2 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #1f2937;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+      .card-body p {
+        margin: 0.2rem 0 0;
+        font-size: 0.78rem;
+        color: #6b7280;
+      }
+      .badge {
+        display: inline-block;
+        padding: 0.1rem 0.5rem;
+        border-radius: 9999px;
+        background: #d1fae5;
+        color: #059669;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      .arrow {
+        font-size: 0.9rem;
+        color: #d1d5db;
+        flex-shrink: 0;
+        transition: color 0.15s;
+      }
+      .card:hover .arrow { color: #9ca3af; }
+
+      /* Card backgrounds */
+      .bg-pink   { background: #fff1f5; border-color: #fce7f3; }
+      .bg-green  { background: #f0fdf4; border-color: #dcfce7; }
+      .bg-slate  { background: #f8fafc; border-color: #f1f5f9; }
+      .bg-orange { background: #fff7ed; border-color: #ffedd5; }
+
+      @media (min-width: 480px) {
+        h1 { font-size: 1.65rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="avatar" src="./assets/avatar-CQuHEOGr.jpg" alt="小西聡美" />
+      <h1>小西聡美</h1>
+      <p class="tagline">アシュタンガヨガ × アロマ × 書く瞑想</p>
+      <p class="role">ヨガ講師 ｜ 2児の母</p>
+      <div class="divider"></div>
+      <p class="bio">3つの習慣で、自分を整えています。</p>
+      <p class="sub">毎日の整え習慣をSubstackで配信中</p>
+      <p class="catch">👇</p>
+
+      <section>
+        <a class="card bg-pink" href="https://satomikonishi.substack.com/" target="_blank" rel="noopener noreferrer">
+          <span class="card-emoji">📬</span>
+          <div class="card-body">
+            <h2>整え習慣ニュースレター</h2>
+            <p>毎日Substackで届きます（無料）</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="card bg-green" href="https://www.wellnesslife-lab.com/#contact" target="_blank" rel="noopener noreferrer">
+          <span class="card-emoji">🌿</span>
+          <div class="card-body">
+            <h2>アロマヨガ講師養成講座 <span class="badge">準備中</span></h2>
+            <p>興味ある方はこちらから登録を</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="card bg-slate" href="https://note.com/yoga_satomi" target="_blank" rel="noopener noreferrer">
+          <span class="card-emoji">📝</span>
+          <div class="card-body">
+            <h2>note</h2>
+            <p>ヨガの言葉と日々の気づき</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="card bg-orange" href="https://room.rakuten.co.jp/room_98ab71876b/items" target="_blank" rel="noopener noreferrer">
+          <span class="card-emoji">🛍️</span>
+          <div class="card-body">
+            <h2>楽天ROOM</h2>
+            <p>ヨガ講師の愛用グッズ</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+      </section>
+    </main>
   </body>
 </html>
