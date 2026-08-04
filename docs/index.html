@@ -4,222 +4,354 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="./assets/favicon-BO1v3ZD5.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>小西聡美 | wellness.labo</title>
+
+    <title>札幌ヨガ講師 小西聡美｜呼吸と思考を整える習慣</title>
+    <meta
+      name="description"
+      content="「ちゃんとしなきゃ」で疲れてしまう女性へ。ヨガ・書く瞑想・香りを通して、呼吸と思考を整える習慣を届けています。札幌ヨガ講師 小西聡美のリンクまとめ。"
+    />
+    <meta name="theme-color" content="#faf6ee" />
+    <link rel="canonical" href="https://satomi-k18.github.io/litlink2/" />
+
+    <!-- OGP（SNS・LINEでシェアされたときの見え方） -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="wellness.labo" />
+    <meta property="og:title" content="札幌ヨガ講師 小西聡美｜呼吸と思考を整える習慣" />
+    <meta
+      property="og:description"
+      content="「ちゃんとしなきゃ」で疲れてしまう女性へ。ヨガ・書く瞑想・香りを通して、呼吸と思考を整える習慣を届けています。"
+    />
+    <meta property="og:url" content="https://satomi-k18.github.io/litlink2/" />
+    <meta property="og:image" content="https://satomi-k18.github.io/litlink2/avatar.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="札幌ヨガ講師 小西聡美｜呼吸と思考を整える習慣" />
+    <meta
+      name="twitter:description"
+      content="「ちゃんとしなきゃ」で疲れてしまう女性へ。呼吸と思考を整える習慣を届けています。"
+    />
+    <meta name="twitter:image" content="https://satomi-k18.github.io/litlink2/avatar.jpg" />
+
+    <!-- 書体を配信しないと端末ごとに別の顔で表示されるため固定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       *, *::before, *::after { box-sizing: border-box; }
+
+      :root {
+        /* ── 指定パレット ───────────────── */
+        --ivory:  #faf6ee;  /* 背景 70% */
+        --green:  #d4e9e2;  /* 通常リンク 20% */
+        --gold:   #dfc49d;  /* アクセント 10% */
+        --text:   #3f403d;  /* 主文字 */
+        --sub:    #6b6b66;  /* 補足（アイボリー背景上） */
+        /* 淡グリーン上では #6b6b66 が 4.28:1、淡ゴールド上では 4.01:1 で AA 未達。
+           ボタン内の補足のみ、明度を少し落とした同系グレーに置き換える */
+        --sub-on-btn:  #5c5c57;  /* 淡グリーン上：5.30:1 */
+        --sub-on-gold: #4a4b47;  /* 淡ゴールド上：5.21:1 */
+
+        --gothic: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+        --mincho: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+      }
+
       body {
         margin: 0;
-        font-family: "Noto Sans JP", "Nunito", sans-serif;
-        background: linear-gradient(180deg, #fdf6f0 0%, #f5fbf7 50%, #fdf8fb 100%);
-        color: #374151;
-        min-height: 100vh;
+        background: var(--ivory);   /* 単色・画像も柄もなし */
+        color: var(--text);
+        font-family: var(--gothic);
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
       }
+
       main {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 1.25rem 6rem;
+        max-width: 25rem;
+        margin: 0 auto;
+        padding: clamp(2.75rem, 10vw, 4rem) clamp(1.25rem, 5.5vw, 1.75rem) clamp(3rem, 11vw, 4.5rem);
         text-align: center;
       }
 
-      /* Avatar */
+      /* ── プロフィール ───────────────── */
+      .avatar-wrap {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+      }
       .avatar {
-        width: 7.5rem;
-        height: 7.5rem;
+        display: block;
+        width: clamp(5.5rem, 23vw, 6.5rem);
+        height: clamp(5.5rem, 23vw, 6.5rem);
         border-radius: 50%;
-        border: 4px solid #fff;
-        box-shadow: 0 8px 24px -4px rgba(167, 198, 170, 0.35),
-          0 4px 10px -3px rgba(0, 0, 0, 0.07);
         -o-object-fit: cover;
            object-fit: cover;
       }
+      /* 写真の淡い背景を紙色になじませる（装飾ではなく色合わせ） */
+      .avatar-wrap::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        pointer-events: none;
+        background: radial-gradient(circle, rgba(250, 246, 238, 0) 58%, rgba(250, 246, 238, 0.85) 100%);
+      }
 
-      /* Profile text */
+      .eyebrow {
+        margin: 0;
+        font-size: 0.66rem;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        text-indent: 0.3em;
+        color: var(--sub);
+      }
+
       h1 {
-        margin: 1.5rem 0 0.5rem;
-        font-size: 1.45rem;
-        font-weight: 700;
-        color: #2d4a3e;
-        letter-spacing: 0.02em;
-      }
-      .tagline {
-        margin: 0.25rem 0 0;
-        font-size: 0.8rem;
+        margin: 0.75rem 0 0;
+        font-family: var(--mincho);
         font-weight: 600;
-        color: #f472b6;
-        letter-spacing: 0.05em;
-      }
-      .role {
-        margin: 0.6rem 0 0;
-        font-size: 0.85rem;
-        color: #6b7280;
-      }
-      .divider {
-        width: 2.5rem;
-        height: 2px;
-        background: linear-gradient(to right, #f9a8d4, #86efac);
-        border-radius: 9999px;
-        margin: 1rem auto;
-      }
-      .bio {
-        margin: 0.5rem 0 0;
-        font-size: 0.95rem;
-        line-height: 2;
-        color: #5a6e63;
-        letter-spacing: 0.01em;
-      }
-      .sub {
-        margin: 0.4rem 0 0;
-        font-size: 0.8rem;
-        color: #9ca3af;
-      }
-      .catch {
-        margin: 1.25rem 0 2rem;
-        font-size: 0.88rem;
-        font-weight: 600;
-        color: #6b7280;
+        font-size: clamp(1.4rem, 6.2vw, 1.6rem);
+        line-height: 1.55;
+        letter-spacing: 0.12em;
+        text-indent: 0.12em;
+        color: var(--text);
       }
 
-      /* Link cards */
-      section {
+      .bio {
+        margin: 1.5rem 0 0;
+        font-size: clamp(0.84rem, 3.7vw, 0.9rem);
+        line-height: 2.2;
+        letter-spacing: 0.04em;
+        color: var(--sub);
+      }
+
+      /* ── リンク共通 ─────────────────── */
+      .links {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        width: 100%;
-        max-width: 26rem;
+        gap: 1.05rem;
+        margin-top: 2.9rem;
       }
-      .card {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 1.1rem 1.4rem;
-        border-radius: 1.5rem;
-        border: 1px solid transparent;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      .btn {
+        display: block;
+        padding: 1.15rem 1.25rem;
+        border-radius: 14px;
         text-decoration: none;
-        color: inherit;
-        text-align: left;
+        color: var(--text);
+        background: var(--green);
+        transition: transform 0.25s ease, filter 0.25s ease;
       }
-      .card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.09);
+      .btn:hover {
+        transform: translateY(-1px);
+        filter: brightness(0.975);
       }
-      .card-emoji {
-        font-size: 1.6rem;
-        flex-shrink: 0;
-        line-height: 1;
+      .btn-title {
+        display: block;
+        font-size: 0.98rem;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        line-height: 1.5;
       }
-      .card-body {
-        flex: 1;
-        min-width: 0;
+      .btn-desc {
+        display: block;
+        margin-top: 0.35rem;
+        font-size: 0.76rem;
+        line-height: 1.65;
+        letter-spacing: 0.03em;
+        color: var(--sub-on-btn);
       }
-      .card-body h2 {
-        margin: 0;
-        font-size: 0.93rem;
-        font-weight: 700;
-        color: #2d4a3e;
+
+      /* ── 主リンク（ゴールドはここ1か所だけ） ── */
+      .btn-primary {
+        background: var(--gold);
+        padding: 1.4rem 1.25rem 1.3rem;
+      }
+      .btn-primary .btn-desc { color: var(--sub-on-gold); }
+      .btn-primary .btn-title {
+        font-family: var(--mincho);
+        font-weight: 600;
+        font-size: clamp(1.02rem, 4.5vw, 1.12rem);
+        letter-spacing: 0.08em;
+      }
+      .btn-primary .tag {
+        display: inline-block;
+        margin-right: 0.5rem;
+        padding: 0.22rem 0.45rem 0.18rem;
+        border: 1px solid rgba(63, 64, 61, 0.45);
+        border-radius: 4px;
+        font-family: var(--gothic);
+        font-size: 0.6rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-indent: 0.14em;
+        vertical-align: 0.16em;
+      }
+      .btn-primary .via {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        letter-spacing: 0.03em;
+        justify-content: center;
+        gap: 0.38rem;
+        margin-top: 0.85rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(63, 64, 61, 0.16);
+        font-size: 0.73rem;
+        letter-spacing: 0.1em;
+        color: var(--sub-on-gold);
       }
-      .card-body p {
-        margin: 0.3rem 0 0;
-        font-size: 0.78rem;
-        color: #7a8f85;
-        line-height: 1.6;
+
+      /* ── 区切り ─────────────────────── */
+      .group-label {
+        margin: 2.9rem 0 0;
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        text-indent: 0.3em;
+        color: var(--sub);
       }
+      .group-label + .links { margin-top: 1.05rem; }
+
       .badge {
         display: inline-block;
-        padding: 0.1rem 0.5rem;
-        border-radius: 9999px;
-        background: #d1fae5;
-        color: #059669;
-        font-size: 0.68rem;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-      }
-      .arrow {
-        font-size: 0.9rem;
-        color: #d1d5db;
-        flex-shrink: 0;
-        transition: color 0.15s;
-      }
-      .card:hover .arrow { color: #9ca3af; }
-
-      /* Button-style card */
-      .card-btn {
-        justify-content: center;
-        gap: 0.6rem;
-        padding: 1.1rem 1.4rem;
-        background: linear-gradient(135deg, #4a7c59 0%, #5e9e72 100%);
-        border-color: transparent;
-        box-shadow: 0 4px 14px rgba(74, 124, 89, 0.35);
-      }
-      .card-btn:hover {
-        box-shadow: 0 8px 22px rgba(74, 124, 89, 0.45);
-      }
-      .btn-label {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #fff;
-        letter-spacing: 0.04em;
+        margin-left: 0.45rem;
+        padding: 0.1rem 0.34rem 0.06rem;
+        border-radius: 3px;
+        background: rgba(63, 64, 61, 0.1);
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: var(--text);
+        vertical-align: 0.12em;
       }
 
-      /* Card backgrounds */
-      .bg-pink   { background: #fef6f9; border-color: #f9dde9; }
-      .bg-green  { background: #f3fbf6; border-color: #d4eedc; }
-      .bg-slate  { background: #f7f9fb; border-color: #e4eaef; }
-      .bg-orange { background: #fef9f4; border-color: #f5e3d0; }
+      footer {
+        margin-top: 3.75rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.26em;
+        text-indent: 0.26em;
+        color: var(--sub);
+      }
 
-      @media (min-width: 480px) {
-        h1 { font-size: 1.65rem; }
+      @media (prefers-reduced-motion: reduce) {
+        * { transition: none !important; }
       }
     </style>
   </head>
   <body>
     <main>
-      <img class="avatar" src="./assets/avatar-CQuHEOGr.jpg" alt="Satomi Konishi" />
-      <h1>札幌ヨガ講師｜Satomi Konishi</h1>
-      <p class="bio">「ちゃんとしなきゃ」で疲れてしまう女性へ。<br>ヨガ・書く瞑想・香りを通して、<br>呼吸と思考を整える習慣を届けています。</p>
-      <div style="margin:1.25rem 0 2rem;"></div>
+      <div class="avatar-wrap">
+        <img class="avatar" src="./assets/avatar-CQuHEOGr.jpg" alt="小西聡美" />
+      </div>
 
-      <section>
-        <a class="card bg-green" href="https://www.wellnesslife-lab.com/" target="_blank" rel="noopener noreferrer">
-          <span class="card-emoji">🌿</span>
-          <div class="card-body">
-            <h2>WELLNESS.LABO</h2>
-            <p>呼吸と思考を整える習慣<br>まずは「整えること」から始めませんか？</p>
-          </div>
-          <span class="arrow">›</span>
+      <p class="eyebrow">SATOMI KONISHI</p>
+      <h1>札幌ヨガ講師 小西 聡美</h1>
+
+      <p class="bio">
+        「ちゃんとしなきゃ」で疲れてしまう女性へ。<br />
+        ヨガ・書く瞑想・香りを通して、<br />
+        呼吸と思考を整える習慣を届けています。
+      </p>
+
+      <div class="links">
+        <!--
+          ▼ 主リンク（ゴールドはページ内でここ1か所のみ）
+          オファー: 7日間の思考リセットワーク〈おかげさまワーク〉
+          出典: 本人談（2026-08-03）
+          ※ 文言変更時は、効果の断定表現を足さないこと（景表法／不実証広告規制）
+        -->
+        <a
+          class="btn btn-primary"
+          href="https://lin.ee/r7oFd5g"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="line"
+        >
+          <span class="btn-title"><span class="tag">無料</span>7日間の思考リセット</span>
+          <span class="btn-desc">〈おかげさまワーク〉をお届けします</span>
+          <span class="via">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            <span>公式LINEで受け取る</span>
+          </span>
+        </a>
+      </div>
+
+      <p class="group-label">MORE</p>
+
+      <div class="links">
+        <a
+          class="btn"
+          href="https://substack.com/@satomikonishi?utm_source=litlink&utm_medium=profile&utm_campaign=letter"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="substack"
+        >
+          <span class="btn-title">整えるレター</span>
+          <span class="btn-desc">無料メール｜呼吸・書く瞑想・香りのヒント</span>
         </a>
 
-        <a class="card card-btn" href="https://substack.com/@satomikonishi" target="_blank" rel="noopener noreferrer">
-          <span style="font-size:1.3rem;">📩</span>
-          <span class="btn-label">整えるレターを無料で受け取る</span>
+        <a
+          class="btn"
+          href="https://www.wellnesslife-lab.com/?utm_source=litlink&utm_medium=profile&utm_campaign=site"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="wellness"
+        >
+          <span class="btn-title">WELLNESS.LABO</span>
+          <span class="btn-desc">呼吸と思考を整えるやさしい習慣</span>
         </a>
 
-        <a class="card bg-slate" href="https://note.com/yoga_satomi" target="_blank" rel="noopener noreferrer">
-          <span class="card-emoji">📝</span>
-          <div class="card-body">
-            <h2>NOTE</h2>
-            <p>ヨガ講師の気づきと実践記録</p>
-          </div>
-          <span class="arrow">›</span>
+        <a
+          class="btn"
+          href="https://note.com/yoga_satomi?utm_source=litlink&utm_medium=profile&utm_campaign=note"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="note"
+        >
+          <span class="btn-title">note</span>
+          <span class="btn-desc">ヨガ講師の気づきと実践記録</span>
         </a>
 
-        <a class="card bg-orange" href="https://room.rakuten.co.jp/room_98ab71876b/items" target="_blank" rel="noopener noreferrer">
-          <span class="card-emoji">🛍</span>
-          <div class="card-body">
-            <h2>楽天ROOM</h2>
-            <p>愛用品｜ヨガ・アロマ・ノート習慣</p>
-          </div>
-          <span class="arrow">›</span>
+        <a
+          class="btn"
+          href="https://room.rakuten.co.jp/room_98ab71876b/items"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          data-cta="rakuten"
+        >
+          <span class="btn-title">楽天ROOM<span class="badge">PR</span></span>
+          <span class="btn-desc">愛用品｜ヨガ・アロマ・ノート習慣</span>
         </a>
-      </section>
+      </div>
+
+      <footer>WELLNESS.LABO</footer>
     </main>
+
+    <!--
+      ▼ 計測
+      1) 遷移先での計測は各リンクの utm_* パラメータで既に有効（note / Substack / 自サイト）。
+         ※ lin.ee 短縮URLと楽天ROOMはパラメータ付与で壊れる可能性があるため付けていない。
+      2) GA4を使う場合は、下の gtag スニペットのコメントを外し
+         G-XXXXXXXXXX を実測IDに置き換える。下のクリック送信は自動で有効になる。
+    -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+    <script>
+      document.querySelectorAll('[data-cta]').forEach(function (el) {
+        el.addEventListener('click', function () {
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'cta_click', { cta_id: el.dataset.cta });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
