@@ -1,0 +1,33 @@
+# 依存パッケージ（npm install で復元できるため管理しない）
+node_modules/
+
+# ビルド出力
+# ※ docs/ は GitHub Pages の配信元なので、ここに追加しないこと
+dist/
+
+# 環境変数・認証情報（絶対にコミットしない）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.netrc
+
+# macOS
+.DS_Store
+._*
+
+# ログ・キャッシュ
+*.log
+npm-debug.log*
+yarn-error.log*
+.vite/
+.cache/
+
+# エディタ・ローカル設定
+.claude/settings.local.json
+.vscode/
+.idea/
