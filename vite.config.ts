@@ -24,7 +24,7 @@ export default defineConfig(({ command }) => {
     base: './',
     plugins: [react(), devSubPathPlugin],
     build: {
-      outDir: 'docs', // ← 出力先を直接 docs に変更！
+      outDir: 'dist', // Cloudflare Pages publishes this directory.
     },
   }
 })
