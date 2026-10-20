@@ -7,6 +7,13 @@ export const links = [
     bg: 'bg-green',
   },
   {
+    id: 'line',
+    label: '💬 公式LINE',
+    desc: 'お気軽にご相談を\nヨガ・アロマのお問い合わせはこちら',
+    href: 'https://lin.ee/r7oFd5g',
+    bg: 'bg-emerald-100',
+  },
+  {
     id: 'newsletter',
     label: '📩 SUBSTACK',
     desc: '整えるレター\n呼吸・書く瞑想・香りのヒントを配信中',
