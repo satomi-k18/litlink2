@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ノーファンデの素肌ログ｜さとみ</title>
+<meta name="description" content="46歳・ヨガインストラクターのさとみが、ファンデを卒業して素肌を整えている記録とPharmestheticのはじめ方。">
+<link rel="canonical" href="https://litlink2.pages.dev/skincare/">
+<link rel="icon" href="../favicon.png">
+<meta name="theme-color" content="#faf6ee">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ヨガのときも、ファンデはつけない。｜さとみの素肌ログ">
+<meta property="og:description" content="46歳・ヨガインストラクターのノーファンデセットと、Pharmestheticのはじめ方。">
+<meta property="og:url" content="https://litlink2.pages.dev/skincare/">
+<meta property="og:image" content="https://litlink2.pages.dev/skincare/images/vqm-lotion.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #faf6ee;
+    --surface: #ffffff;
+    --mint: #d4e9e2;
+    --accent: #dfc49d;
+    --accent-deep: #7e6136;
+    --ink: #4d4a44;
+    --muted: #66625a;
+    --line: #e7dfd2;
+    --line-green: #03893C;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    padding-bottom: 80px;
+    word-break: auto-phrase;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--accent-deep); }
+  h1, h2, h3 { font-family: "Zen Old Mincho", serif; font-weight: 500; line-height: 1.6; margin: 0; }
+
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 72px 0; }
+  .bg-surface { background: var(--surface); }
+  .bg-mint { background: var(--mint); }
+
+  .label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--accent-deep);
+    margin-bottom: 12px;
+  }
+  h2 { font-size: 24px; margin-bottom: 28px; }
+  h3 { font-size: 20px; margin-bottom: 8px; }
+  p { margin: 0 0 1.2em; }
+  .muted { color: var(--muted); font-size: 14px; }
+
+  /* 仮の文言・画像（差し替え用） */
+  .todo {
+    background: #fff4c2;
+    border-radius: 4px;
+    padding: 0 4px;
+  }
+  .photo {
+    background: linear-gradient(160deg, #eef5f1, var(--mint));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 16px;
+    border: 1px dashed var(--accent);
+  }
+
+  /* ヒーロー */
+  .hero { padding: 24px 0 64px; }
+  .hero-visual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: linear-gradient(160deg, #eef5f1, var(--mint));
+    border-radius: 20px;
+    padding: 24px 16px 16px;
+    margin-bottom: 28px;
+  }
+  .hero-visual img { width: 100%; border-radius: 12px; }
+  .hero-visual-label {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .15em;
+    color: var(--accent-deep);
+  }
+  .hero h1 { font-size: 30px; margin-bottom: 20px; }
+  .hero .lead { font-size: 16px; }
+
+  /* ボタン */
+  .btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 14px;
+    padding: 16px 20px;
+    border-radius: 999px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform .3s, box-shadow .3s;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(77,74,68,.12); }
+  .btn-main { background: var(--accent-deep); color: #fff; }
+  .btn-line { background: var(--line-green); color: #fff; }
+  .btn-ghost { background: var(--surface); color: var(--accent-deep); border: 1px solid var(--accent); }
+
+  /* チェックリスト */
+  .checks { list-style: none; padding: 0; margin: 0; }
+  .checks li {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 16px 20px 16px 48px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .checks li::before {
+    content: "";
+    position: absolute;
+    left: 20px; top: 50%;
+    width: 14px; height: 14px;
+    margin-top: -7px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent-deep);
+  }
+
+  /* ストーリー */
+  .story .photo { aspect-ratio: 1 / 1; max-width: 280px; margin: 0 auto 32px; border-radius: 50%; }
+
+  /* 4つの習慣 */
+  .habits { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .habit {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .habit .num { font-family: "Zen Old Mincho", serif; color: var(--accent-deep); font-size: 12px; letter-spacing: .15em; }
+  .habit h3 { font-size: 20px; margin: 4px 0 6px; }
+  .habit p { font-size: 14px; margin: 0; color: var(--muted); line-height: 1.7; }
+  .habit.is-skin { background: var(--accent); }
+  .habit.is-skin p, .habit.is-skin .num { color: var(--ink); }
+
+  /* アイテム */
+  .main-set, .sub-set {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 28px 20px;
+    margin: 28px 0 20px;
+  }
+  .main-set { border: 1px solid var(--accent); }
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--ink);
+    font-size: 12px;
+    border-radius: 999px;
+    padding: 2px 12px;
+    margin-bottom: 10px;
+  }
+  .badge-mint { background: var(--mint); }
+  .set-title { font-size: 20px; margin-bottom: 6px; }
+  .set-lead { font-size: 14px; color: var(--muted); }
+  .pair { display: grid; gap: 8px; margin: 20px 0; }
+  .pair-item {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 14px;
+    align-items: start;
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .pair-item img { grid-row: 1 / 4; width: 88px; border-radius: 12px; }
+  .pair-item h4, .plus-item h4 { font-size: 16px; font-weight: 500; line-height: 1.5; margin: 6px 0 4px; }
+  .pair-item h4 small { display: block; font-size: 12px; color: var(--muted); font-weight: 400; letter-spacing: 0; }
+  .pair-item p { font-size: 14px; line-height: 1.7; margin: 0; color: var(--muted); }
+  .step-tag { font-size: 12px; color: var(--accent-deep); letter-spacing: .1em; }
+  .voice { font-size: 14px; }
+  .basic { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; margin-top: 16px; }
+  .basic img { width: 100%; border-radius: 12px; }
+  .basic-steps { list-style: none; padding: 0; margin: 0; font-size: 14px; }
+  .basic-steps li { padding: 8px 0; border-bottom: 1px solid var(--line); line-height: 1.5; }
+  .basic-steps li:last-child { border-bottom: none; }
+  .basic-steps b { display: block; font-size: 14px; letter-spacing: .1em; color: var(--accent-deep); font-weight: 500; }
+  .basic-steps small { display: block; font-size: 12px; color: var(--muted); }
+  .plus-title { font-size: 20px; margin: 40px 0 16px; }
+  .plus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .plus-item h4, .plus-item p { word-break: normal; }
+  .plus-item { background: var(--surface); border-radius: 20px; padding: 12px; text-align: center; }
+  .plus-item img { width: 100%; max-width: 110px; margin: 0 auto; border-radius: 12px; }
+  .plus-item p { font-size: 14px; line-height: 1.6; margin: 0; color: var(--muted); }
+  .routine-list { list-style: none; padding: 0; margin: 0 0 8px; }
+  .routine-list li {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  .routine-list li small { margin-left: auto; font-size: 12px; color: var(--muted); }
+  .routine-list span {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--mint);
+    font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .routine-list li.is-main { border: 1px solid var(--accent); }
+  .routine-list li.is-main span { background: var(--accent); }
+
+  /* はじめ方 */
+  .steps { counter-reset: step; list-style: none; padding: 0; margin: 0 0 32px; }
+  .steps li {
+    counter-increment: step;
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 24px 20px 20px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .steps li::before {
+    content: "STEP " counter(step);
+    display: block;
+    font-size: 12px;
+    letter-spacing: .2em;
+    color: var(--accent-deep);
+    margin-bottom: 4px;
+  }
+  .steps p { font-size: 14px; margin: 0 0 12px; }
+  .steps p:last-child { margin-bottom: 0; }
+
+  .id-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--cream);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    padding: 12px 12px 12px 20px;
+    margin: 12px 0;
+  }
+  .id-box .id-label { font-size: 12px; color: var(--muted); display: block; line-height: 1.4; }
+  .id-box .id-value { font-family: "Zen Old Mincho", serif; font-size: 28px; letter-spacing: .12em; line-height: 1.3; }
+  .copy-btn {
+    flex-shrink: 0;
+    background: var(--accent-deep);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .copy-btn.is-done { background: var(--ink); }
+  .warn {
+    font-size: 14px;
+    background: #fbefe6;
+    border-radius: 12px;
+    padding: 10px 14px;
+    color: var(--accent-deep);
+  }
+
+  /* FAQ */
+  details {
+    background: var(--surface);
+    border-radius: 20px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+  }
+  summary {
+    cursor: pointer;
+    padding: 18px 24px 18px 0;
+    font-weight: 500;
+    list-style: none;
+    position: relative;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-deep);
+    font-size: 20px;
+  }
+  details[open] summary::after { content: "−"; }
+  details p { font-size: 14px; padding-bottom: 18px; margin: 0; }
+
+  /* 締め */
+  .closing { text-align: center; }
+  .closing h2 { font-size: 22px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 40px 0 24px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer .sns { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 20px; }
+  footer p { margin-bottom: .8em; }
+
+  /* スマホ下部の固定ボタン */
+  .sticky {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    background: var(--cream);
+    border-top: 1px solid var(--line);
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+  }
+  .sticky .btn { margin: 0; padding: 12px 10px; font-size: 14px; }
+
+  @media (min-width: 768px) {
+    section { padding: 104px 0; }
+    .hero { padding: 72px 0 96px; }
+    .hero h1 { font-size: 38px; }
+    h2 { font-size: 28px; }
+    .habits { grid-template-columns: repeat(4, 1fr); }
+    .plus-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pair { grid-template-columns: repeat(3, 1fr); }
+    .pair-item { display: block; padding: 12px; }
+    .pair-item img { width: 100%; max-width: 120px; margin: 0 auto 8px; }
+    .main-set, .sub-set { padding: 36px 32px; }
+    .sticky { justify-content: center; }
+    .sticky .btn { max-width: 280px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <div class="wrap">
+    <!-- さとみさんの写真が用意できたら、ここを写真（横長 4:3）に差し替える -->
+    <div class="hero-visual">
+      <img src="images/vqm-lotion.jpg" alt="VQMローション">
+      <img src="images/finish-lotion.jpg" alt="フィニッシュローション">
+      <img src="images/final-balm.jpg" alt="ファイナルバーム">
+      <span class="hero-visual-label">わたしのノーファンデセット</span>
+    </div>
+    <span class="label">素肌ログ</span>
+    <h1>ヨガのときも、<br>ファンデはつけない。</h1>
+    <p class="lead">46歳、ヨガインストラクターのさとみです。<br>
+    クマもくすみも、まだまだ気になります。<br>
+    それでも「隠す」より“整える”を選んで、素肌で人の前に立っています。</p>
+    <a class="btn btn-main" href="#start">スキンケアのはじめ方を見る</a>
+  </div>
+</header>
+
+<!-- 共感 -->
+<section class="bg-mint">
+  <div class="wrap">
+    <h2>こんなこと、ありませんか？</h2>
+    <ul class="checks">
+      <li>運動やヨガで汗をかくと、メイク崩れが気になる</li>
+      <li>ファンデを重ねるほど、かえって疲れて見える</li>
+      <li>40代になって、何から整えればいいかわからない</li>
+      <li>マスクを外したとき、素肌に自信が持てない</li>
+      <li>ファンデをやめたい。でも素肌を見せるのは不安</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ストーリー -->
+<section class="story">
+  <div class="wrap">
+    <h2>ファンデを卒業するまで</h2>
+    <!-- プロフィール写真（正方形）が用意できたら、ここに入れる -->
+    <p>ヨガのクラスでは、メイクをしません。<br>
+    アシュタンガヨガで汗をかくので、素肌のまま練習しています。</p>
+    <p>46歳。クマもくすみも、正直まだ気になります。<br>
+    それでも、隠すために重ねるより、毎日のスキンケアで整えるほうを選びました。</p>
+    <p>いま続けているのが、韓国のスキンケアブランド「Pharmesthetic」です。<br>
+    その記録を、Instagram「素肌ログ」で発信しています。</p>
+    <p>肌に触れる数分も、ヨガと同じように、自分を整える時間にしています。</p>
+    <p class="muted">※個人の感想です。肌の感じ方には個人差があります。</p>
+  </div>
+</section>
+
+<!-- 4つの整え習慣 -->
+<section class="bg-surface">
+  <div class="wrap">
+    <h2>わたしの「整え習慣」</h2>
+    <p>忙しい毎日でも、自分に戻れる小さな習慣を大事にしています。肌のケアは、そのひとつです。</p>
+    <div class="habits">
+      <div class="habit"><span class="num">01</span><h3>呼吸</h3><p>アシュタンガで<br>体を目覚めさせる</p></div>
+      <div class="habit"><span class="num">02</span><h3>ノート</h3><p>書くことで<br>頭の中を整える</p></div>
+      <div class="habit"><span class="num">03</span><h3>香り</h3><p>アロマで<br>気持ちを切り替える</p></div>
+      <div class="habit is-skin"><span class="num">04</span><h3>肌</h3><p>手のひらで触れて<br>今日の自分を知る</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 愛用アイテム -->
+<!-- 商品画像・説明は公式サイト（pharmesthetic.jp）から仮で使用中。本部に使用許可を確認中 -->
+<section id="items">
+  <div class="wrap">
+    <h2>わたしのスキンケア</h2>
+    <p>韓国発のスキンケアブランド「Pharmesthetic（ファーメステティック）」を、コツコツ続けています。</p>
+
+    <!-- 主役：ノーファンデセット -->
+    <div class="main-set">
+      <span class="badge">いちばんのおすすめ</span>
+      <h3 class="set-title">ノーファンデセット</h3>
+      <p class="set-lead">ファンデのかわりに、この3本。<br>スキンケアの最後に重ねて、そのままヨガへ。</p>
+      <div class="pair">
+        <div class="pair-item">
+          <img src="images/vqm-lotion.jpg" alt="ビバンクエントマンカ ローション" loading="lazy">
+          <span class="step-tag">仕上げ 1</span>
+          <h4>VQMローション<small>ビバンクエントマンカ ローション</small></h4>
+          <p>30ml／スキンケアの最後に、適量をまんべんなくなじませます。</p>
+        </div>
+        <div class="pair-item">
+          <img src="images/finish-lotion.jpg" alt="フィニッシュローション" loading="lazy">
+          <span class="step-tag">仕上げ 2</span>
+          <h4>フィニッシュローション<small>Finish Lotion</small></h4>
+          <p>20g／肌全体にムラなく伸ばし、トントンとなじませます。</p>
+        </div>
+        <div class="pair-item">
+          <img src="images/final-balm.jpg" alt="ファイナルバーム" loading="lazy">
+          <span class="step-tag">仕上げ 3</span>
+          <h4>ファイナルバーム<small>Final Balm</small></h4>
+          <p>30ml／適量をまんべんなく肌になじませます。</p>
+        </div>
+      </div>
+      <p class="voice">スキンケアの最後にこの3本を重ねて、ファンデはつけずにヨガへ行きます。</p>
+      <p class="muted">それぞれ単品で購入できます。再販待ちの商品もあるので、在庫は公式サイトでご確認ください。</p>
+    </div>
+
+    <!-- 土台：基礎3種セット -->
+    <div class="sub-set">
+      <span class="badge badge-mint">肌の土台づくり</span>
+      <h3 class="set-title">基礎3種セット</h3>
+      <p class="set-lead">落とす・洗う・満たす。毎日のケアの基本になる3本です。</p>
+      <div class="basic">
+        <img src="images/basic3-set.jpg" alt="基礎3種セット" loading="lazy">
+        <ol class="basic-steps">
+          <li><b>落とす</b>ローションポリッシング<small>200ml・クレンジング</small></li>
+          <li><b>洗う</b>ゲルポリッシング<small>200ml・洗顔</small></li>
+          <li><b>満たす</b>ゲルスターター<small>200ml・化粧水</small></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- プラスするなら -->
+    <h3 class="plus-title">気になる方はプラスして</h3>
+    <div class="plus-grid">
+      <div class="plus-item">
+        <img src="images/greenboxin.jpg" alt="グリーンボクシン" loading="lazy">
+        <h4>グリーンボクシン</h4>
+        <p>ジェル・150ml<br>化粧水のあとに</p>
+      </div>
+      <div class="plus-item">
+        <img src="images/cemenzal-light.jpg" alt="セメンザルライト" loading="lazy">
+        <h4>セメンザルライト</h4>
+        <p>クリーム・100ml<br>スキンケアの最後に</p>
+      </div>
+      <div class="plus-item">
+        <img src="images/sj-cream.jpg" alt="スーパージェクション クリーム" loading="lazy">
+        <h4>スーパージェクション クリーム</h4>
+        <p>クリーム・20ml<br>仕上げの前に</p>
+      </div>
+      <div class="plus-item">
+        <img src="images/mintavi-booster.jpg" alt="ミンタビ スーパーブースターキット" loading="lazy">
+        <h4>ミンタビ スーパーブースターキット</h4>
+        <p>ビタミンCアンプル<br>＋クリームのセット</p>
+      </div>
+      <div class="plus-item">
+        <img src="images/routiner.jpg" alt="ルティナー" loading="lazy">
+        <h4>ルティナー</h4>
+        <p>夜用・15ml<br>翌朝ぬるま湯で洗い流す</p>
+      </div>
+    </div>
+
+    <!-- 使う順番 -->
+    <div class="routine">
+      <h3 class="plus-title">使う順番</h3>
+      <p class="muted">6〜8がノーファンデセットです。</p>
+      <ol class="routine-list">
+        <li><span>1</span>ローションポリッシング<small>落とす</small></li>
+        <li><span>2</span>ゲルポリッシング<small>洗う</small></li>
+        <li><span>3</span>ゲルスターター<small>満たす</small></li>
+        <li><span>4</span>グリーンボクシン<small>保湿ジェル</small></li>
+        <li><span>5</span>セメンザルライト<small>保湿クリーム</small></li>
+        <li class="is-main"><span>6</span>VQMローション<small>仕上げ</small></li>
+        <li class="is-main"><span>7</span>フィニッシュローション<small>仕上げ</small></li>
+        <li class="is-main"><span>8</span>ファイナルバーム<small>仕上げ</small></li>
+      </ol>
+    </div>
+
+    <p class="muted" style="margin-top:24px;">価格は、無料会員登録をすると公式サイトで確認できます。</p>
+  </div>
+</section>
+
+<!-- はじめ方 -->
+<section class="bg-mint" id="start">
+  <div class="wrap">
+    <h2>はじめ方</h2>
+    <p>Pharmestheticは代理店制度のブランドです。公式サイトで無料会員登録をすると、価格の確認と購入ができます。</p>
+    <ol class="steps">
+      <li>
+        <h3>代理店IDをコピー</h3>
+        <p>登録のときに、代理店IDの入力が必要です。</p>
+        <div class="id-box">
+          <div>
+            <span class="id-label">さとみの代理店ID</span>
+            <span class="id-value" id="agent-id">ks18</span>
+          </div>
+          <button class="copy-btn" type="button" id="copy-btn">コピー</button>
+        </div>
+        <p class="warn">入力ミスを防ぐため、手で打たずにコピーして貼り付けてください。</p>
+      </li>
+      <li>
+        <h3>公式サイトで無料会員登録</h3>
+        <p>「代理店ID」の欄に <strong>ks18</strong> を貼り付けて、お名前・住所などを入力します。</p>
+        <a class="btn btn-main" href="https://pharmesthetic.jp/account/register" target="_blank" rel="noopener">公式サイトで登録する</a>
+      </li>
+      <li>
+        <h3>価格を見て、気になるものを購入</h3>
+        <p>登録後にログインすると、価格が表示されます。何から始めたらいいか迷ったら、LINEで気軽に聞いてください。</p>
+      </li>
+    </ol>
+    <a class="btn btn-line" href="https://lin.ee/r7oFd5g" target="_blank" rel="noopener">LINEで相談する</a>
+    <p class="muted" style="text-align:center;">ヨガのお知らせと同じ公式LINEです。<br>友だち追加のあと「肌」とひとこと送ってください。</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <h2>よくある質問</h2>
+    <details>
+      <summary>会員登録にお金はかかりますか？</summary>
+      <p>登録は無料です。価格を見てから、購入するかどうか決められます。</p>
+    </details>
+    <details>
+      <summary>代理店IDを間違えてしまいました</summary>
+      <p>気づいた時点でLINEで連絡してください。一緒に確認します。</p>
+    </details>
+    <details>
+      <summary>敏感肌でも使えますか？</summary>
+      <p>肌に合うかどうかは、人によって違います。気になる方は、成分表を見ながら一緒に確認しましょう。使ってみて合わないと感じたら、すぐに使用をやめてください。</p>
+    </details>
+    <details>
+      <summary>何から始めたらいいですか？</summary>
+      <p>迷ったら、<a href="#items">ノーファンデセット</a>か基礎3種セットからがおすすめです。肌の様子を聞きながら、LINEで一緒に選びます。</p>
+    </details>
+    <details>
+      <summary>登録したら、代理店に誘われますか？</summary>
+      <p>ご希望がない限り、代理店のお誘いはしません。商品を使いたい方だけ、安心して登録してください。</p>
+    </details>
+  </div>
+</section>
+
+<!-- 締め -->
+<section class="bg-surface closing">
+  <div class="wrap">
+    <h2>隠すより、整える。<br>一緒に素肌の記録をはじめませんか。</h2>
+    <p>毎日の素肌の様子は、Instagramで発信しています。</p>
+    <a class="btn btn-main" href="#start">はじめ方を見る</a>
+    <a class="btn btn-ghost" href="https://www.instagram.com/satomi_hadalog/" target="_blank" rel="noopener">Instagram @satomi_hadalog</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="sns">
+      <a href="https://www.instagram.com/satomi_hadalog/" target="_blank" rel="noopener">素肌ログ @satomi_hadalog</a>
+      <a href="https://www.instagram.com/satomi.konishi/" target="_blank" rel="noopener">ヨガ @satomi.konishi</a>
+    </div>
+    <p>このページは、Pharmestheticの代理店であるさとみ（代理店ID ks18）が運営しています。このページから登録・購入されると、代理店に報酬が発生します。</p>
+    <p>掲載している内容は個人の感想で、効果・効能を保証するものではありません。</p>
+    <p>商品画像・商品情報は Pharmesthetic 公式サイトより。</p>
+    <p>© 2026 satomi</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-main" href="#start">はじめ方</a>
+  <a class="btn btn-line" href="https://lin.ee/r7oFd5g" target="_blank" rel="noopener">LINEで相談</a>
+</div>
+
+<script>
+  const copyBtn = document.getElementById('copy-btn');
+  copyBtn.addEventListener('click', async () => {
+    const id = document.getElementById('agent-id').textContent.trim();
+    try {
+      await navigator.clipboard.writeText(id);
+    } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = id;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+    copyBtn.textContent = 'コピーしました';
+    copyBtn.classList.add('is-done');
+    setTimeout(() => {
+      copyBtn.textContent = 'コピー';
+      copyBtn.classList.remove('is-done');
+    }, 2000);
+  });
+</script>
+</body>
+</html>
