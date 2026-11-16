@@ -194,7 +194,7 @@
     padding: 10px;
   }
   .pair-item img { grid-row: 1 / 4; width: 88px; border-radius: 12px; }
-  .pair-item h4, .plus-item h4 { font-size: 16px; font-weight: 500; line-height: 1.5; margin: 6px 0 4px; }
+  .pair-item h4 { font-size: 16px; font-weight: 500; line-height: 1.5; margin: 6px 0 4px; }
   .pair-item h4 small { display: block; font-size: 12px; color: var(--muted); font-weight: 400; letter-spacing: 0; }
   .pair-item p { font-size: 14px; line-height: 1.7; margin: 0; color: var(--muted); }
   .step-tag { font-size: 12px; color: var(--accent-deep); letter-spacing: .1em; }
@@ -206,12 +206,32 @@
   .basic-steps li:last-child { border-bottom: none; }
   .basic-steps b { display: block; font-size: 14px; letter-spacing: .1em; color: var(--accent-deep); font-weight: 500; }
   .basic-steps small { display: block; font-size: 12px; color: var(--muted); }
-  .plus-title { font-size: 20px; margin: 40px 0 16px; }
-  .plus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .plus-item h4, .plus-item p { word-break: normal; }
-  .plus-item { background: var(--surface); border-radius: 20px; padding: 12px; text-align: center; }
-  .plus-item img { width: 100%; max-width: 110px; margin: 0 auto; border-radius: 12px; }
-  .plus-item p { font-size: 14px; line-height: 1.6; margin: 0; color: var(--muted); }
+  .plus-title { font-size: 20px; margin: 40px 0 8px; }
+  .new-item {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 28px 20px;
+    margin: 20px 0;
+  }
+  .badge-new { background: var(--mint); }
+  .new-body { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; margin: 8px 0 12px; }
+  .new-body img { width: 120px; border-radius: 12px; }
+  .new-body p { font-size: 14px; margin: 0 0 6px; }
+  .cat-title { font-size: 16px; font-weight: 500; color: var(--accent-deep); margin: 24px 0 8px; }
+  .cat-list { list-style: none; padding: 0; margin: 0; background: var(--surface); border-radius: 20px; }
+  .cat-list li {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 14px;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cat-list li:last-child { border-bottom: none; }
+  .cat-list img { width: 64px; border-radius: 12px; }
+  .cat-list b { display: block; font-size: 16px; font-weight: 500; line-height: 1.5; }
+  .cat-list span { display: block; font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .cat-list small { display: block; font-size: 12px; color: var(--muted); line-height: 1.6; }
   .routine-list { list-style: none; padding: 0; margin: 0 0 8px; }
   .routine-list li {
     display: flex; align-items: center; gap: 12px;
@@ -345,7 +365,6 @@
     .hero h1 { font-size: 38px; }
     h2 { font-size: 28px; }
     .habits { grid-template-columns: repeat(4, 1fr); }
-    .plus-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .pair { grid-template-columns: repeat(3, 1fr); }
     .pair-item { display: block; padding: 12px; }
     .pair-item img { width: 100%; max-width: 120px; margin: 0 auto 8px; }
@@ -471,35 +490,113 @@
       </div>
     </div>
 
-    <!-- プラスするなら -->
-    <h3 class="plus-title">気になる方はプラスして</h3>
-    <div class="plus-grid">
-      <div class="plus-item">
-        <img src="images/greenboxin.jpg" alt="グリーンボクシン" loading="lazy">
-        <h4>グリーンボクシン</h4>
-        <p>ジェル・150ml<br>化粧水のあとに</p>
+    <!-- 新発売 -->
+    <div class="new-item">
+      <span class="badge badge-new">11月16日 新発売</span>
+      <div class="new-body">
+        <img src="images/active-cream.jpg" alt="アクティブクリーム" loading="lazy">
+        <div>
+          <h3 class="set-title">アクティブクリーム</h3>
+          <p class="set-lead">Active Cream・18g</p>
+          <p>乾燥やつっぱり感が気になる肌に、うるおいを与えてしっとり保つデイリークリームです。</p>
+        </div>
       </div>
-      <div class="plus-item">
-        <img src="images/cemenzal-light.jpg" alt="セメンザルライト" loading="lazy">
-        <h4>セメンザルライト</h4>
-        <p>クリーム・100ml<br>スキンケアの最後に</p>
-      </div>
-      <div class="plus-item">
-        <img src="images/sj-cream.jpg" alt="スーパージェクション クリーム" loading="lazy">
-        <h4>スーパージェクション クリーム</h4>
-        <p>クリーム・20ml<br>仕上げの前に</p>
-      </div>
-      <div class="plus-item">
-        <img src="images/mintavi-booster.jpg" alt="ミンタビ スーパーブースターキット" loading="lazy">
-        <h4>ミンタビ スーパーブースターキット</h4>
-        <p>ビタミンCアンプル<br>＋クリームのセット</p>
-      </div>
-      <div class="plus-item">
-        <img src="images/routiner.jpg" alt="ルティナー" loading="lazy">
-        <h4>ルティナー</h4>
-        <p>夜用・15ml<br>翌朝ぬるま湯で洗い流す</p>
-      </div>
+      <p class="muted">使い方：スキンケアの最後に、パール大を手に取ってやさしくなじませます。乾燥が気になる日は、そのあとにセメンザルライトを少し重ねるのが公式のおすすめです。</p>
     </div>
+
+    <!-- そのほかのアイテム -->
+    <h3 class="plus-title">そのほかのアイテム</h3>
+    <h4 class="cat-title">保湿クリーム</h4>
+    <ul class="cat-list">
+        <li>
+          <img src="images/cemenzal-light.jpg" alt="セメンザルライト" loading="lazy">
+          <div><b>セメンザルライト</b><span>クリーム・100ml</span><small>スキンケアのいちばん最後に</small></div>
+        </li>
+        <li>
+          <img src="images/cemenzal.jpg" alt="セメンザル" loading="lazy">
+          <div><b>セメンザル</b><span>クリーム・50ml</span><small>スキンケアの最終段階に</small></div>
+        </li>
+        <li>
+          <img src="images/sj-cream.jpg" alt="スーパージェクション クリーム" loading="lazy">
+          <div><b>スーパージェクション クリーム</b><span>クリーム・20g</span><small>スキンケアの仕上げの前に</small></div>
+        </li>
+    </ul>
+    <h4 class="cat-title">化粧水のあとに</h4>
+    <ul class="cat-list">
+        <li>
+          <img src="images/greenboxin.jpg" alt="グリーンボクシン" loading="lazy">
+          <div><b>グリーンボクシン</b><span>ジェル・150ml</span><small>化粧水で整えたあとに</small></div>
+        </li>
+        <li>
+          <img src="images/greenboxin-strong.jpg" alt="グリーンボクシン ストロング" loading="lazy">
+          <div><b>グリーンボクシン ストロング</b><span>65ml</span><small>適量を手に取ってなじませる</small></div>
+        </li>
+        <li>
+          <img src="images/mahorosa.jpg" alt="マホロサ" loading="lazy">
+          <div><b>マホロサ</b><span>ミスト・100ml</span><small>洗顔後、顔全体に吹きかける</small></div>
+        </li>
+        <li>
+          <img src="images/vqm-capsule.jpg" alt="ビバンクエントマンカ カプセル" loading="lazy">
+          <div><b>ビバンクエントマンカ カプセル</b><span>25g</span><small>カプセルを手でつぶしてなじませる</small></div>
+        </li>
+        <li>
+          <img src="images/mintavi-booster.jpg" alt="ミンタビ スーパーブースターキット" loading="lazy">
+          <div><b>ミンタビ スーパーブースターキット</b><span>アンプル＋クリームのセット</span><small>ミンタビ20とミンタビNクリーム</small></div>
+        </li>
+    </ul>
+    <h4 class="cat-title">スペシャルケア</h4>
+    <ul class="cat-list">
+        <li>
+          <img src="images/vqm-kit.jpg" alt="ビバンクエントマンカ キット" loading="lazy">
+          <div><b>ビバンクエントマンカ キット</b><span>3本セット・各15ml</span><small>オープナー→プランター→プロテクターの順に</small></div>
+        </li>
+        <li>
+          <img src="images/routiner.jpg" alt="ルティナー" loading="lazy">
+          <div><b>ルティナー</b><span>夜用・15ml</span><small>最後になじませて、翌朝ぬるま湯で洗い流す</small></div>
+        </li>
+        <li>
+          <img src="images/uyuni-stone.jpg" alt="ユニストーン" loading="lazy">
+          <div><b>ユニストーン</b><span>パック</span><small>10〜20分おいて、ぬるま湯で洗い流す</small></div>
+        </li>
+        <li>
+          <img src="images/cemenphalt.jpg" alt="セメンファルト" loading="lazy">
+          <div><b>セメンファルト</b><span>パック・10回分</span><small>塗り広げて20分おき、はがす</small></div>
+        </li>
+        <li>
+          <img src="images/calmensheet.jpg" alt="カルメンシート" loading="lazy">
+          <div><b>カルメンシート</b><span>シートマスク・50枚</span><small>ゲルスターターで整えたあとに</small></div>
+        </li>
+        <li>
+          <img src="images/fixcica.jpg" alt="フィクシカ" loading="lazy">
+          <div><b>フィクシカ</b><span>部分用・13g</span><small>綿棒で気になる部分に点置き</small></div>
+        </li>
+    </ul>
+    <h4 class="cat-title">お試し・使い切り</h4>
+    <ul class="cat-list">
+        <li>
+          <img src="images/tutorial-kit.jpg" alt="チュートリアルキット" loading="lazy">
+          <div><b>チュートリアルキット</b><span>基礎3種のミニサイズ・各30ml</span><small>はじめての方のお試しに</small></div>
+        </li>
+        <li>
+          <img src="images/vqm-lotion-film.jpg" alt="VQMローション フィルム" loading="lazy">
+          <div><b>VQMローション フィルム</b><span>1ml×10個</span><small>使い切りタイプ</small></div>
+        </li>
+        <li>
+          <img src="images/cemenzal-light-film.jpg" alt="セメンザルライト フィルム" loading="lazy">
+          <div><b>セメンザルライト フィルム</b><span>0.95g×8個</span><small>使い切りタイプ</small></div>
+        </li>
+    </ul>
+    <h4 class="cat-title">新しい洗顔とトナー</h4>
+    <ul class="cat-list">
+        <li>
+          <img src="images/polishing-a.jpg" alt="ポリッシングA" loading="lazy">
+          <div><b>ポリッシングA</b><span>洗顔料・200ml</span><small>100円玉ほどを泡立てて洗う</small></div>
+        </li>
+        <li>
+          <img src="images/starter-a.jpg" alt="スターターA" loading="lazy">
+          <div><b>スターターA</b><span>トナー・200ml</span><small>ポリッシングAのあとに</small></div>
+        </li>
+    </ul>
 
     <!-- 使う順番 -->
     <div class="routine">
