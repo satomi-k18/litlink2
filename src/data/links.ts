@@ -14,6 +14,13 @@ export const links = [
     bg: 'bg-emerald-100',
   },
   {
+    id: 'skincare',
+    label: '🌸 愛用スキンケア pharmesthetic（PR）',
+    desc: 'ヨガのときもファンデはつけない\nわたしのスキンケアと始め方',
+    href: 'https://litlink2.pages.dev/skincare/?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
+    bg: 'bg-emerald-100',
+  },
+  {
     id: 'newsletter',
     label: '📩 SUBSTACK',
     desc: '整えるレター\n呼吸・書く瞑想・香りのヒントを配信中',
